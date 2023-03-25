@@ -8,6 +8,7 @@ from ..models import Question
 
 
 def index(request):
+    3/0 # 강제로 오류 발생
     page = request.GET.get('page',1) # 페이지
     # http://localhost:8000/pybo/?page=1 처럼 get 방식으로 호출 된 url에서 page 값을 가져올 때 사용
     # 페이지값이 없이 호출 되면 자동으로 /1로 설정
